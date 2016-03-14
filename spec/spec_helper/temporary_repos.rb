@@ -83,7 +83,7 @@ module SpecHelper
 
     def self.extended(base)
       base.before do
-        tmp_repos_path.mkpath
+        SpecHelper.tmp_repos_path.mkpath
       end
     end
   end
